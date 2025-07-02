@@ -146,7 +146,7 @@ def get_db_connection(max_retries: int = 3, retry_delay: float = 1.0):
 
 # Load the Excel file
 try:
-    excel_file = "PayamLastPriceChanges-20250218-121511.xlsx"
+    excel_file = "Payam.xlsx"
     df = pd.read_excel(excel_file, sheet_name="Sheet1")
     df = df.drop(columns=[col for col in df.columns if 'Unnamed' in col])
     food_list = df[['name', 'price']].dropna().drop_duplicates().values.tolist()
