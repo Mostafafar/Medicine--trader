@@ -1,0 +1,4 @@
+fastapi==0.95.2
+   uvicorn==0.22.0
+   python-telegram-bot==20.3
+   pandas==1.5.3
